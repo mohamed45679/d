@@ -1,7 +1,7 @@
 import pandas as pd 
 import streamlit as st
 st.title("cars price prediction:")
-from sklearn.ensemble import GradientBoostingRegressor 
+from scikit-learn.ensemble import GradientBoostingRegressor 
 model=GradientBoostingRegressor()
 data=pd.read_csv(r"carrr.csv")
 x=data.drop(['price'],axis=1)
